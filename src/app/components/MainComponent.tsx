@@ -1,3 +1,4 @@
+import Member from "./Member";
 
 
 
@@ -31,8 +32,10 @@ export default function MainComponent(){
     ];
     
     return (
-        <div className="text-xl">
-
+        <div className="p-8 rounded border">
+            {teamMembers.map((member => (
+                <Member name={member.name} role={member.role} email={member.email} />
+            )))}
         </div>
     )
 }
