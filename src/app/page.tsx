@@ -1,7 +1,8 @@
+import MainComponent from "./components/MainComponent";
 
 
 export default function Home() {
   return (
-    <h1 className="text-xl">hello</h1>
+    <MainComponent />
   );
 }
