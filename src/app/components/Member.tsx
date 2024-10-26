@@ -18,6 +18,12 @@ export default function Member({ name, role, email }: Member) {
                     <Edit2 className="w-4 h-4" />
                 </button>
             </Dialog.Trigger>
+            <Dialog.Portal>
+                <Dialog.Overlay className="fixed inset-0 bg-black/55" />
+                <Dialog.Content>
+                    
+                </Dialog.Content>
+            </Dialog.Portal>
         </Dialog.Root>
       </div>
       <p className="text-sm">{role}</p>
