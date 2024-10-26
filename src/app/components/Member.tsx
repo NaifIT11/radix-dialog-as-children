@@ -39,6 +39,14 @@ export default function Member({ name, role, email }: Member) {
                   <label htmlFor="name">name:</label>
                   <input type="text" id="name" value={name} className="px-4 text-gray-700 py-2 rounded ring-black outline-none border focus-visible:ring-2 ring-offset-2"/>
                 </div>
+                <div className="grid gap-2">
+                  <label htmlFor="role">role:</label>
+                  <input type="text" id="role" value={role} className="px-4 text-gray-700 py-2 rounded ring-black outline-none border focus-visible:ring-2 ring-offset-2"/>
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="email">email:</label>
+                  <input type="email" id="email" value={email} className="px-4 text-gray-700 py-2 rounded ring-black outline-none border focus-visible:ring-2 ring-offset-2"/>
+                </div>
               </form>
             </Dialog.Content>
           </Dialog.Portal>
