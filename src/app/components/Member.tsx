@@ -20,7 +20,7 @@ export default function Member({ name, role, email }: Member) {
           </Dialog.Trigger>
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/55" />
-            <Dialog.Content className="fixed sm:top-1/2 top-[100vh] flex flex-col gap-4 rounded p-4 bg-white  left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <Dialog.Content className="fixed top-1/2 sm:mt-auto flex flex-col gap-4 rounded p-4 bg-white  left-1/2 -translate-x-1/2 -translate-y-1/2">
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <Dialog.Title className="text-xl">
