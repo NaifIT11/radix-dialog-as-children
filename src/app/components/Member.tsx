@@ -37,7 +37,7 @@ export default function Member({ name, role, email }: Member) {
               <form className="flex flex-col gap-3">
                 <div className="grid gap-2">
                   <label htmlFor="name">name:</label>
-                  <input type="text" id="name" />
+                  <input type="text" id="name" value={name} className="px-4 text-gray-700 py-2 rounded ring-black outline-none border focus-visible:ring-2 ring-offset-2"/>
                 </div>
               </form>
             </Dialog.Content>
