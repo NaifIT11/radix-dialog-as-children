@@ -32,7 +32,7 @@ export default function MainComponent(){
     ];
     
     return (
-        <div className="p-8 rounded border">
+        <div className="p-8 rounded border grid gap-3">
             {teamMembers.map((member => (
                 <Member name={member.name} role={member.role} email={member.email} />
             )))}
