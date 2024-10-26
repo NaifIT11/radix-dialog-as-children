@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import { Edit2 } from "lucide-react";
 
 type Member = {
   name: string;
@@ -9,10 +10,14 @@ type Member = {
 export default function Member({ name, role, email }: Member) {
   return (
     <div className="p-4 rounded border flex flex-col gap-3">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold">{name}</h1>
         <Dialog.Root>
-            
+            <Dialog.Trigger asChild>
+                <button>
+                    <Edit2 className="w-4 h-4" />
+                </button>
+            </Dialog.Trigger>
         </Dialog.Root>
       </div>
       <p className="text-sm">{role}</p>
