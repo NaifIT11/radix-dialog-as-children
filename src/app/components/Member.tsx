@@ -47,6 +47,7 @@ export default function Member({ name, role, email }: Member) {
                   <label htmlFor="email">email:</label>
                   <input type="email" id="email" value={email} className="px-4 text-gray-700 py-2 rounded ring-black outline-none border focus-visible:ring-2 ring-offset-2"/>
                 </div>
+                <button className="self-end px-4 py-2 font-medium bg-black rounded hover:bg-[rgb( 0 0  0 / 0.8)] text-white">save changes</button>
               </form>
             </Dialog.Content>
           </Dialog.Portal>
